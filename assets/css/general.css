@@ -1,20 +1,26 @@
 .navbar {
     display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
     justify-content: space-between;
     align-items: center;
-    padding: 2.5rem;
+    gap: 2rem;
+    padding: 2.5rem 0;
 }
 
 .navbar__logo--item {
     font-weight: 700;
-    font-size: 3rem;
+    letter-spacing: 2px;
+    font-size: 2.8rem;
     color: var( --text-color-white);
    
 }
 
 .menu__list{
     display: flex;
-    gap: 4rem;
+    gap: 5rem;
 
 }
 
@@ -23,3 +29,28 @@
     color: var( --text-color-white);
     
 }
+
+
+.menu__list--item.active a{
+   
+    color: var( --color-red);
+}
+
+.btn{
+    max-width: max-content;
+    font-family: inherit;
+    border-radius: 2rem;
+    padding: 1.2rem 2rem;
+    color: var(--color-white);
+}
+
+.btn-orange{
+    background-color: var(--color-red);
+}
+.btn-orange:hover {
+    background-color: var(--color-blue);
+}
+
+/* .btn-primary {
+    background-color: var(--color-blue);
+} */
